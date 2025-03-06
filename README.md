@@ -1,1 +1,0 @@
-# tomotakakubota.github.io
