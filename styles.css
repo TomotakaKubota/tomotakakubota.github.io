@@ -1,6 +1,6 @@
 header {
     background-color: #77acf2;
-    color: #f8f7f7;
+    color: #faf7f7;
     width: 960px;
     height: 50 px;
 }
@@ -27,7 +27,8 @@ body {
 
 #nav li a {
     text-decoration: none;
-    color: #fffdfd;
+    color: #f9f6f6;
+    font-size:20px;
 }
 
 footer {
