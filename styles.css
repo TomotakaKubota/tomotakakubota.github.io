@@ -1,5 +1,6 @@
 header {
     background-color: #77acf2;
+    background-image: "./content_photos/DSC_1363.JPG";
     color: #faf7f7;
     width: 960px;
     height: 50 px;
@@ -28,7 +29,7 @@ body {
 #nav li a {
     text-decoration: none;
     color: #ffffff;
-    font-size:30px;
+    font-size:30        px;
 }
 
 footer {
@@ -92,12 +93,21 @@ footer {
     }
 
     .pdf-button {
-        width: 100%; /* スマホではボタンを横幅いっぱいに */
-        font-size: 30 px;
-        padding: 12px 0;
-        text-align: center;
-        position: relative;
-        z-index: 1000;
+        display: inline-block;
+        padding: 2px 3px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #77acf2;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    .pdf-button:hover {
+        background-color: #5c8dcf;
     }
 
     footer {
