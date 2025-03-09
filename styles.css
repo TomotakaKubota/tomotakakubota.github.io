@@ -42,7 +42,7 @@ footer {
     padding: 2px 3px;
     font-size: 14px;
     font-weight: bold;
-    color: white;
+    color: #ffffff;
     background-color: #77acf2;
     border: none;
     border-radius: 5px;
@@ -82,7 +82,7 @@ footer {
         height: auto;
         float: none; /* 横並びを解除 */
         text-align: center; /* テキストを中央揃え */
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     #nav li a {
