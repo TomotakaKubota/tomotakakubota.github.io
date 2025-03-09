@@ -5,7 +5,7 @@ header {
     height: auto;
     margin: 0 ;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
 }
 
 main{
-    width: 100vw; 
-    font-size: 10px;
+    width: 960px; 
+    font-size: 20px;
     margin: auto;
 }
 
@@ -48,13 +48,17 @@ footer {
     margin: 0 ;
 }
 
+.section_title {
+    color: #77acf2;
+}
+
 .intro {
     text-align: center;
 }
 .pdf-button {
     display: inline-block;
     padding: 2px 3px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #ffffff;
     background-color: #77acf2;
