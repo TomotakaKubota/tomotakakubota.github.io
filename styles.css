@@ -80,23 +80,29 @@ footer {
         padding: 10px 0;
         font-size: 20px;
     }
-
     #nav {
-        padding: 0;
+        list-style: none;
+        overflow: hidden;
         margin: 0; 
-    }
+        padding: 0 ;
+    } 
+    
+    #nav li {
+        width: 140px;
+        height: 50px;
+        float: right;
+    }    
 
     #nav li {
-        width: 100%; /* 横幅いっぱい */
-        height: auto;
+        width: 140px; /* 横幅いっぱい */
+        height: 50px;
         float: right;
-        margin-bottom: 15px;
     }
 
     #nav li a {
-        font-size: 15px; /* 文字を大きく */
-        display: block;
-        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
     }
 
     .pdf-button {
