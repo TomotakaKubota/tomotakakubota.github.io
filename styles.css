@@ -79,7 +79,7 @@ footer {
         width: 100%;  /* スマホでは横幅いっぱいに */
         margin: 0;
         padding: 0;
-        font-size: 13px ;
+        font-size: 10px ;
     }
 
     .intro {
@@ -90,7 +90,7 @@ footer {
         width: 100%;
         height: auto; /* 高さを自動調整 */
         padding: 10px 0;
-        font-size: 15px;
+        font-size: 13px;
     }
     #nav {
         list-style: none;
