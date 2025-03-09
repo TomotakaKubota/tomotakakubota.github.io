@@ -1,23 +1,30 @@
 header {
     background-color: #77acf2;
-    background-image: "./content_photos/DSC_1363.JPG";
     color: #faf7f7;
-    width: 960px;
-    height: 50 px;
+    width: 100vw;
+    height: auto;
+    margin: 0 ;
+    text-align: center;
+    font-size: 25px;
 }
 
 body {
     font-family: serif;
     background-color: #ffffff;
     color: #020202;
-    width: 960px; 
     margin: auto;
 }
 
-
+main{
+    width: 100vw; 
+    font-size: 20px;
+    margin: auto;
+}
 #nav {
     list-style: none;
     overflow: hidden;
+    margin: 0; 
+    padding: 0 ;
 }
 
 #nav li {
@@ -29,13 +36,15 @@ body {
 #nav li a {
     text-decoration: none;
     color: #ffffff;
-    font-size:30        px;
+    font-size: 20px;
 }
 
 footer {
     background-color: #77acf2;
     color: #020202;
-    
+    width: 100vw;
+    text-align: center;
+    margin: 0 ;
 }
 
 .pdf-button {
@@ -56,38 +65,36 @@ footer {
     background-color: #5c8dcf;
 }
 
-
 /* メディアクエリ: スマホ用（画面幅600px以下の場合） */
-@media (max-width: 600px) {
+@media (max-width: 960px) {
     body {
         width: 100%;  /* スマホでは横幅いっぱいに */
         margin: 0;
         padding: 0;
+        font-size: 14px ;
     }
 
     header {
         width: 100%;
         height: auto; /* 高さを自動調整 */
-        text-align: center; /* 中央揃え */
         padding: 10px 0;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #nav {
         padding: 0;
-        text-align: center; /* 中央揃え */
+        margin: 0; 
     }
 
     #nav li {
         width: 100%; /* 横幅いっぱい */
         height: auto;
-        float: none; /* 横並びを解除 */
-        text-align: center; /* テキストを中央揃え */
+        float: right;
         margin-bottom: 15px;
     }
 
     #nav li a {
-        font-size: 25px; /* 文字を大きく */
+        font-size: 15px; /* 文字を大きく */
         display: block;
         padding: 10px;
     }
@@ -95,7 +102,7 @@ footer {
     .pdf-button {
         display: inline-block;
         padding: 2px 3px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: bold;
         color: #ffffff;
         background-color: #77acf2;
@@ -111,8 +118,8 @@ footer {
     }
 
     footer {
-        width: 100%;
+        width: 100vw;
         text-align: center;
-        padding: 10px 0;
+        margin: 0 ;
     }
 }
