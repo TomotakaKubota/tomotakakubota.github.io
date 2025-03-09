@@ -81,9 +81,15 @@ footer {
         padding: 0;
         font-size: 18vw ;
     }
+    
+    main {
+        width: 100%;
+        height: auto;
+    }
+
 
     header {
-        width: 100vw;
+        width: 100%;
         height: auto; /* 高さを自動調整 */
         padding: 15px;
         font-size: 15px;
@@ -124,7 +130,7 @@ footer {
     }
 
     footer {
-        width: 100vw;
+        width: 100%;
         text-align: center;
         padding: 10px;
     }
