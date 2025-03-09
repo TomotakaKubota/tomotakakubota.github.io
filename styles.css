@@ -93,7 +93,7 @@ footer {
 
     .pdf-button {
         width: 100%; /* スマホではボタンを横幅いっぱいに */
-        font-size: 16px;
+        font-size: 30px;
         padding: 12px 0;
         text-align: center;
         position: relative;
