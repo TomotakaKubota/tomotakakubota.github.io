@@ -36,3 +36,70 @@ footer {
     color: #020202;
     
 }
+
+.pdf-button {
+    display: inline-block;
+    padding: 2px 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #77acf2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: #5c8dcf;
+}
+
+
+/* メディアクエリ: スマホ用（画面幅600px以下の場合） */
+@media (max-width: 600px) {
+    body {
+        width: 100%;  /* スマホでは横幅いっぱいに */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        height: auto; /* 高さを自動調整 */
+        text-align: center; /* 中央揃え */
+        padding: 10px 0;
+    }
+
+    #nav {
+        padding: 0;
+        text-align: center; /* 中央揃え */
+    }
+
+    #nav li {
+        width: 100%; /* 横幅いっぱい */
+        height: auto;
+        float: none; /* 横並びを解除 */
+        text-align: center; /* テキストを中央揃え */
+        margin-bottom: 5px;
+    }
+
+    #nav li a {
+        font-size: 18px; /* 文字を大きく */
+        display: block;
+        padding: 10px;
+    }
+
+    .pdf-button {
+        width: 100%; /* スマホではボタンを横幅いっぱいに */
+        font-size: 16px;
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
