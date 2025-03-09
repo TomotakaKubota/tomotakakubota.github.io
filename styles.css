@@ -82,27 +82,19 @@ footer {
     }
     #nav {
         list-style: none;
-        overflow: hidden;
         margin: 0; 
         padding: 0 ;
     } 
     
     #nav li {
-        width: 140px;
+        width: 100px;
         height: 50px;
         float: right;
     }    
-
-    #nav li {
-        width: 140px; /* 横幅いっぱい */
-        height: 50px;
-        float: right;
-    }
-
     #nav li a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .pdf-button {
