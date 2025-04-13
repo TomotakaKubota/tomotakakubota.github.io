@@ -1,3 +1,19 @@
+.profile {
+    display: flex;
+    align-items: center; /* 垂直中央寄せ */
+    justify-content: center; /* 水平方向中央寄せ（必要に応じて） */
+    gap: 20px; /* 画像と名前の間のスペース */
+}
+
+a {
+    color:  #094da6; /* 好きな色に変更 */
+    text-decoration: none; /* 下線を消す場合 */
+}
+
+.mypicture {
+    border-radius: 60%; /* 丸くしたい場合（任意） */
+}
+
 header {
     background-color: #77acf2;
     color: #faf7f7;
