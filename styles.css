@@ -25,8 +25,8 @@ header {
 }
 
 body {
-    font-family: serif;
-    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffffa8;
     color: #020202;
     margin: auto;
 }
@@ -95,12 +95,14 @@ footer {
         width: 100%;  /* スマホでは横幅いっぱいに */
         margin: 0;
         padding: 0;
+        background-color: #ffffffa8;
     }
     
     main {
         width: 100%;
         height: auto;
         font-size: 15px;
+
     }
 
     header {
