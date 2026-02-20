@@ -1,154 +1,207 @@
-.profile {
-    display: flex;
-    align-items: center; /* 垂直中央寄せ */
-    justify-content: center; /* 水平方向中央寄せ（必要に応じて） */
-    gap: 20px; /* 画像と名前の間のスペース */
+/* ===== Base / Reset ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-a {
-    color:  #094da6; /* 好きな色に変更 */
-    text-decoration: none; /* 下線を消す場合 */
-}
-
-.mypicture {
-    border-radius: 60%; /* 丸くしたい場合（任意） */
-}
-
-header {
-    background-color: #77acf2;
-    color: #faf7f7;
-    width: 100vw;
-    height: auto;
-    margin: 0 ;
-    text-align: center;
-    font-size: 20px;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #ffffffa8;
-    color: #020202;
-    margin: auto;
+    font-family: 'Hiragino Maru Gothic ProN', Times, serif; /* 変更しない */
+    background-color: #ffffffa8; /* 変更しない */
+    color: #020202; /* 変更しない */
+    line-height: 1.7;
 }
 
+/* ===== Links ===== */
+a {
+    color:  #094da6; /* 変更しない */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ===== Layout ===== */
 main{
-    width: 960px; 
+    /* 固定960pxだと余白が広く感じやすいので、読みやすい上限＋可変幅に */
+    max-width: 760px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
     font-size: 20px;
-    margin: auto;
 }
 
+/* ===== Header ===== */
+header {
+    background-color: #77acf2; /* 変更しない */
+    color: #faf7f7;            /* 変更しない */
+    width: 100%;               /* 100vwだと横スクロールの原因になりやすい */
+    height: auto;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 18px 12px;
+}
+
+/* Profile block */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.mypicture {
+    border-radius: 60%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== Navigation (if you re-enable later) ===== */
 #nav {
     list-style: none;
     overflow: hidden;
-    margin: 0; 
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
-
 #nav li {
     width: 140px;
     height: 50px;
     float: right;
 }
-
 #nav li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
 }
 
-footer {
-    background-color: #77acf2;
-    color: #fefcfc;
-    width: 100vw;
-    text-align: center;
-    margin: 0 ;
-}
-
+/* ===== Typography / Sections ===== */
 .section_title {
-    color: #77acf2;
+    color: #77acf2; /* 変更しない */
+    margin: 28px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #77acf2;
 }
 
-.intro {
-    text-align: center;
+h4 {
+    margin: 18px 0 8px;
 }
+
+/* Intro text: 左寄せ＆読みやすく */
+.intro {
+    text-align: left;
+    margin: 14px 0 18px;
+}
+
+/* Lists */
+ul {
+    margin: 10px 0 18px;
+    padding-left: 1.2em;
+}
+li {
+    margin: 10px 0;
+}
+li p {
+    margin: 6px 0 0;
+}
+
+/* Publications list readability */
+#Publications_list li {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(119, 172, 242, 0.08); /* 同色系の薄い背景で軽く区切る */
+}
+
+/* ===== Buttons ===== */
 .pdf-button {
     display: inline-block;
-    padding: 2px 3px;
+    padding: 2px 6px;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    background-color: #77acf2;
+    background-color: #77acf2; /* 変更しない */
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.05s ease;
+    vertical-align: baseline;
+    margin-left: 6px;
 }
-
 .pdf-button:hover {
     background-color: #5c8dcf;
 }
+.pdf-button:active {
+    transform: translateY(1px);
+}
 
-/* メディアクエリ: スマホ用（画面幅600px以下の場合） */
+/* ===== Footer ===== */
+footer {
+    background-color: #77acf2; /* 変更しない */
+    color: #fefcfc;            /* 変更しない */
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 16px 12px;
+}
+.github {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ===== Small screens ===== */
 @media (max-width: 600px) {
-    body {
-        width: 100%;  /* スマホでは横幅いっぱいに */
-        margin: 0;
-        padding: 0;
-        background-color: #ffffffa8;
-    }
-    
     main {
+        max-width: none;
         width: 100%;
-        height: auto;
+        padding: 18px 14px 28px;
         font-size: 15px;
-
     }
 
     header {
         width: 100%;
-        height: auto; /* 高さを自動調整 */
-        padding: 15px;
+        height: auto;
+        padding: 14px 12px;
         font-size: 15px;
     }
-    #nav {
-        list-style: none;
-        margin: 0; 
-        padding: 0 ;
-    } 
-    
+
+    .profile {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mypicture {
+        width: 160px;
+        height: 160px;
+    }
+
     #nav li {
         width: 100px;
         height: 50px;
         float: right;
-    }    
+    }
     #nav li a {
-        text-decoration: none;
-        color: #ffffff;
         font-size: 18px;
     }
 
     .pdf-button {
-        display: inline-block;
-        padding: 2px 3px;
         font-size: 14px;
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #77acf2;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-    
-    .pdf-button:hover {
-        background-color: #5c8dcf;
+        padding: 2px 6px;
+        border-radius: 6px;
     }
 
     footer {
         width: 100%;
-        text-align: center;
-        padding: 10px;
+        padding: 12px 10px;
     }
 }
