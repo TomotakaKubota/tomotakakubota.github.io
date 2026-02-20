@@ -1,3 +1,36 @@
+:root{
+  /* 日本語本文：macは丸ゴ、他OSは読みやすいゴシックに寄せる */
+  --font-jp:
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Maru Gothic Pro",
+    "Hiragino Sans",
+    "Yu Gothic",
+    "YuGothic",
+    "Meiryo",
+    "Noto Sans JP",
+    "Noto Sans CJK JP",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  /* 英数字：OS標準のUIフォント寄りで字面を安定させる */
+  --font-latin:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Hiragino Sans",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+}
+
 /* ===== Base / Reset ===== */
 *,
 *::before,
@@ -11,7 +44,7 @@ html, body {
 }
 
 body {
-    font-family: 'Hiragino Maru Gothic ProN', Times, serif; /* 変更しない */
+    font-family: var(--font-jp);
     background-color: #ffffffa8; /* 変更しない */
     color: #020202; /* 変更しない */
     line-height: 1.7;
