@@ -152,7 +152,7 @@ li p {
 #Publications_list li {
     padding: 10px 12px;
     border-radius: 10px;
-    background: rgba(119, 172, 242, 0.08); /* 同色系の薄い背景で軽く区切る */
+    /* background: rgba(119, 172, 242, 0.08); 同色系の薄い背景で軽く区切る */
 }
 
 /* ===== Buttons ===== */
